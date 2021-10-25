@@ -7,7 +7,7 @@ key_file = open("key.txt", "r")
 key = key_file.read()
 config = {
     "alpha_vantage": {
-        "key": key, # Claim your free API key here: https://www.alphavantage.co/support/#api-key
+        "key": key, 
         "symbol": "IBM",
         "outputsize": "full",
         "key_adjusted_close": "5. adjusted close",
