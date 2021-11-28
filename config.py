@@ -8,12 +8,12 @@ key = key_file.read()
 config = {
     "alpha_vantage": {
         "key": key, 
-        "symbol": "IBM",
+        "symbol": ["IBM", "GOOG", "NFLX", "AMZN", "AAPL", "MSFT", "TSLA", "NVDA", "ADBE", "INTC"],
         "outputsize": "full",
         "key_adjusted_close": "5. adjusted close",
     },
     "data": {
-        "window_size": 20,
+        "window_size": 30,
         "train_split_size": 0.80,
     }, 
     "plots": {
@@ -26,7 +26,7 @@ config = {
         "color_pred_test": "#FF4136",
     },
     "model": {
-        "input_size": 1, # since we are only using 1 feature, close price
+        "input_size": 11, # since we are only using 1 feature, close price
         "num_lstm_layers": 2,
         "lstm_size": 32,
         "dropout": 0.2,
