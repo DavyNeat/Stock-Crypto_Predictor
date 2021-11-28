@@ -37,5 +37,7 @@ config = {
         "num_epoch": 100,
         "learning_rate": 0.01,
         "scheduler_step_size": 40,
+        "n_past": 30,
+        "n_future": 20,
     }
 }
