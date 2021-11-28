@@ -13,8 +13,8 @@ config = {
         "key_adjusted_close": "5. adjusted close",
     },
     "data": {
-        "window_size": 30,
-        "train_split_size": 0.80,
+        "window_size": 40,
+        "train_split_size": 0.70,
     }, 
     "plots": {
         "xticks_interval": 90, # show a date every 90 days
